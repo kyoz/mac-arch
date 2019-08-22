@@ -256,19 +256,19 @@ sudo pacman -S xf86-video-intel xf86-input-libinput mesa
 
 ### Required packages for display
 
-Using pacman to install all these packages:
+Using pacman to install all these packages:   
 
-xorg-server: graphical server
-xorg-xinit: starts graphical server
-xorg-xrandr: resize & rotate utility for X
-xorg-xwininfo: querying windows infomation on X server
-xorg-xprop: detecting window properties tool
-xorg-xdpyinfo: display infomation unity
-xorg-xset: to configure keyboard
-xorg-xev: indentifying keycodes
-xcompmgr: remove screen-tearing, add shadow, transparent...
-xwallpaper: set wallpaper
-arandr: UI for screen adjustment
+xorg-server: graphical server   
+xorg-xinit: starts graphical server   
+xorg-xrandr: resize & rotate utility for X   
+xorg-xwininfo: querying windows infomation on X server   
+xorg-xprop: detecting window properties tool   
+xorg-xdpyinfo: display infomation unity   
+xorg-xset: to configure keyboard   
+xorg-xev: indentifying keycodes   
+xcompmgr: remove screen-tearing, add shadow, transparent...   
+xwallpaper: set wallpaper   
+arandr: UI for screen adjustment   
 
 ### Required package for window manager
 
@@ -530,5 +530,7 @@ kbdlight up [<percentage>]|down [<percentage>]|off|max|get|set <value>
 https://github.com/aur-packages/bcwc-pcie-git
 
 # Improvement
+
+
 
 # Useful packages
