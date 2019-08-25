@@ -1,6 +1,10 @@
 # mac-arch
 > Arch installation guide on Mac
 
+<p align="center">
+  <img src="demo/1.png" width="1000">
+</p>
+
 # Contents
 
   - [Install arch dual boot](install-arch-dual-boot)
