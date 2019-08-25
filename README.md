@@ -531,6 +531,66 @@ https://github.com/aur-packages/bcwc-pcie-git
 
 # Improvement
 
+## Improve DHCP connection speed
 
+In `/etc/dhcpcd.conf` add to the end:
+
+```
+# Disable IP ARP checking
+noarp
+```
+
+## Turn on firewall
+
+Run these commands:
+
+```
+sudo pacman -S ufw
+sudo systemctl enable ufw
+sudo ufw enable
+```
+
+## Enable Trim for SSD
+
+Run these commands:
+
+```
+sudo systemctl enable fstrim.timer
+sudo systemctl start fstrim.timer
+```
+
+## Fixing lid closing to suspend
+
+In `/etc/systemd/logind.conf`, add those at bottom:
+
+```
+HandlePowerKey=suspend
+HandleLidSwitch=suspend
+```
+
+## Power Saving on your Intel
+
+Thermald is a deamon regulating the CPU speed, when your CPU runs too hot.
+
+```
+yaourt -S thermald
+sudo systemctl enable thermald
+sudo systemctl start thermald
+
+sudo pacman -S tlp
+sudo systemctl enable tlp.service
+sudo systemctl enable tlp-sleep.service
+sudo systemctl start tlp.service
+sudo systemctl start tlp-sleep.service
+
+sudo pacman -S cpupower
+```
+
+Mine is MJLQ2 so set this
+
+/etc/default/cpupower
+```
+max_freq="2.2GHz"
+```
 
 # Useful packages
