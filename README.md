@@ -594,3 +594,120 @@ max_freq="2.2GHz"
 ```
 
 # Useful packages
+
+## Display
+
+xorg-server: graphical server
+xorg-xinit: starts graphical server
+xorg-xwininfo: querying windows infomation on X server
+xorg-xprop: detecting window properties tool
+xorg-xdpyinfo: display infomation unity
+xorg-xev: indentifying keycodes
+xcompmgr: remove screen-tearing, add shadow, transparent...
+xwallpaper: set wallpaper
+arandr: UI for screen adjustment
+polybar
+groff
+
+## Window manager
+
+i3-gaps:  main graphical user interface and window manager
+i3status: generate status for i3bar
+i3blocks: status bar
+i3lock: lock screen
+
+## System management
+
+### General
+
+gnome-keyring: serves as system keyring
+
+### Wifi Network
+
+NetworkManager-tui
+
+### Audio
+
+pulseaudio: audio system
+pulseaudio-alsa: ALSA audio interface
+pulsemixer: an intuitive ncurses audio controller
+
+### Bindings
+
+sxhkd: key mappings
+xcape: to allow capslock functions both as a super key and escape key with xcape.
+
+### Theme
+
+gtk-theme-arc-gruvbox-git*
+
+### Clipboard
+
+xclip: support terminal clipboard
+
+### Fonts
+
+ttf-joypixels: system unicode symbols and cool emojis (required for render color icon in iblocks)
+
+### Notifications
+
+dunst:lightweight and customizable notification daemon
+libnotify: allow desktop notifications (dunstify dep)
+
+## Terminal
+
+st
+urxvt
+
+## Browser
+
+w3m: terminal browser <3
+brave
+firefox
+chromium
+
+## File manager
+
+vifm
+nnn
+fzf
+
+## Editor
+
+ed: standard editor
+vim
+neovim
+
+## Viewers
+
+sxiv: simple X image viewer
+zathura: pdf viewer
+zathura-pdf-mupdf: mupdf compatibility in zathura
+python-ueberzug: preview image file
+mediainfo: preview audio and video infomation
+atool: preview infomation about archives
+docx2txt: preview .docx file
+
+## Players
+
+mpd: lightweight music daemon
+mpc: terminal interface for mpd
+ncmpcpp: ncurses interface for mpd
+
+## Utils
+
+upzip
+unrar
+unclutter: hide inactive mouse
+maim: capture screen & regions
+htop-vim-git*: View system usage infomations, processes...
+calcurse: calender in terminal
+tree: view directory as tree
+ffmpeg: convert audio, video easily
+newsboat: terminal RSS client
+sc-im*: work with excel in terminal
+tmux: terminal multiplexer
+urlscan: scan for url
+xdotool: provides window action utilities on terminal
+youtube-dl: download youtube video, mp3...
+lm-sensors
