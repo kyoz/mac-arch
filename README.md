@@ -5,6 +5,17 @@
   <img src="demo/1.png" width="1000">
 </p>
 
+:ballot_box_with_check: display
+:ballot_box_with_check: audio
+:ballot_box_with_check: internet connection, wifi
+:ballot_box_with_check: keyboard (work perfectly as normal keyboard)
+:ballot_box_with_check: trackpad & external mouse
+:ballot_box_with_check: screen backlight
+:ballot_box_with_check: keyboard backlight
+:ballot_box_with_check: fan
+:ballot_box_with_check: battery (not best but quite good)
+:black_square_button: webcam: not tested but someone say it work perfectly with [bcwc-pcie](https://aur.archlinux.org/packages/bcwc-pcie-git/)
+
 # Contents
 
   - [Install arch dual boot](#install-arch-dual-boot)
