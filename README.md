@@ -253,7 +253,7 @@ Then create this file structure:
     |___Library   
         |___CoreServices   
             |___SystemVersion.plist   
-                |___boot.efi              (Is the file we'v copy, upload in the previous step)   
+            |___boot.efi              (Is the file we'v copy, upload in the previous step)   
 ```
 
 Edit SystemVersion.plist content:
