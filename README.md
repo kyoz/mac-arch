@@ -19,8 +19,45 @@
     - [Install the bootloader](#install-the-bootloader)
     - [Make arch duo bootable](#make-arch-duo-bootable)
   - [Install to make arch usable](#install-to-make-arch-usable)
+    - [Set tty default font](#set-tty-default-font)
+    - [Install drivers](#install-drivers)
+    - [Install require packages](#install-require-packages)
+      - [Required packages for display](#required-packages-for-display)
+      - [Required packages for window manager](#required-packages-for-window-manager)
+    - [Keyboard](#keyboard)
+    - [Screen display](#screen-display)
+    - [Window management](#window-management)
+    - [Better network management](#better-network-management)
+    - [Trackpad](#trackpad)
+    - [Sound](#sound)
+    - [Fan](#fan)
+    - [Screen backlight](#screen-backlight)
+    - [Keyboard backlight](#keyboard-backlight)
+    - [Webcam](#webcam)
   - [Improvement](#improvement)
+    - [Improve DHCP connection speed](#improve-dhcp-connection-speed)
+    - [Turn on firewall](#turn-on-firewall)
+    - [Enable Trim for SSD](#enable-trim-for-ssd)
+    - [Fixing lid closing to suspend](#fixing-lid-closing-to-suspend)
+    - [Power saving for Intel chip](#power-saving-for-intel-chip)
   - [Useful packages](#useful-packages)
+    - [Display](#display)
+    - [Window manager](#window-manager)
+    - [System management](#system-management)
+      - [General](#general)
+      - [Wifi Network](#wifi-network)
+      - [Audio](#audio)
+      - [Bindings](#bindings)
+      - [Clipboard](#clipboard)
+      - [Fonts](#fonts)
+      - [Notifications](#notifications)
+      - [Terminal](#terminal)
+      - [Browser](#browser)
+      - [File manager](#file-manager)
+      - [Editor](#editor)
+      - [Viewers](#viewers)
+      - [Players](#players)
+      - [Utils](#utils)
 
 # Install arch dual boot
 
@@ -212,10 +249,10 @@ Then create this file structure:
 
 |___mach_kernel   
 |___System   
-       |___Library   
-              |___CoreServices   
-                      |___SystemVersion.plist   
-                      |___boot.efi              (Is the file we'v copy, upload in the previous step)   
+		|___Library   
+				|___CoreServices   
+						|___SystemVersion.plist   
+								|___boot.efi              (Is the file we'v copy, upload in the previous step)   
 
 Edit SystemVersion.plist content:
 
@@ -583,7 +620,7 @@ HandlePowerKey=suspend
 HandleLidSwitch=suspend
 ```
 
-## Power Saving on your Intel
+## Power Saving for Intel chip
 
 Thermald is a deamon regulating the CPU speed, when your CPU runs too hot.
 
@@ -674,6 +711,7 @@ max_freq="2.2GHz"
 
 | Name          | Description                                                                        |
 | ---           | ---                                                                                |
+| ttf-dejavu ttf-linux-libertine ttf-mac-fonts ttf-ms-fonts ttf-opensans ttf-ubuntu-font-family ttf-symbola | good default fonts |
 | ttf-joypixels | system unicode symbols and cool emojis (required for render color icon in iblocks) |
 
 ### Notifications
