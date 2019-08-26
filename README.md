@@ -249,10 +249,10 @@ Then create this file structure:
 
 |___mach_kernel   
 |___System   
-		|___Library   
-				|___CoreServices   
-						|___SystemVersion.plist   
-								|___boot.efi              (Is the file we'v copy, upload in the previous step)   
+    |___Library   
+        |___CoreServices   
+            |___SystemVersion.plist   
+                |___boot.efi              (Is the file we'v copy, upload in the previous step)   
 
 Edit SystemVersion.plist content:
 
