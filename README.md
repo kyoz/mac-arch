@@ -7,14 +7,24 @@
 
 # Contents
 
-  - [Install arch dual boot](install-arch-dual-boot)
-  - [Install to make arch usable](install-to-make-arch-usable)
-  - [Improvement](improvement)
-  - [Useful packages](useful-packages)
+  - [Install arch dual boot](#install-arch-dual-boot)
+    - [Make arch installer USB](#make-arch-installer-usb)
+    - [Make space for Arch](#make-space-for-arch)
+    - [Boot it up](#boot-it-up)
+    - [Connect wifi](#connect-wifi)
+    - [Partitioning](#partitioning)
+    - [Format and mount partition](#format-and-mount-partition)
+    - [Install base packages & generate fstab](#install-base-packages-&-generate-fstab)
+    - [System config](#system-config)
+    - [Install the bootloader](#install-the-bootloader)
+    - [Make arch duo bootable](#make-arch-duo-bootable)
+  - [Install to make arch usable](#install-to-make-arch-usable)
+  - [Improvement](#improvement)
+  - [Useful packages](#useful-packages)
 
 # Install arch dual boot
 
-## Make arch installer USB (bootable)
+## Make arch installer USB
 
 Download arch's iso [here](https://www.archlinux.org/download/)
 
@@ -67,10 +77,10 @@ cgdisk /dev/sdaX
 
 Create these new partitions:
 
-  - 128MB with type Apple HFS+ (This is required in order to make thing works)
-  - 256MB with type Linux filesystem
-  - xMB      with type Linux Swap (If you have space, try to keep it double size of your ram size)
-  - xGB       with type Linux filesystem (This is our arch place)
+- 128MB with type Apple HFS+ (This is required in order to make thing works)
+- 256MB with type Linux filesystem
+- xMB      with type Linux Swap (If you have space, try to keep it double size of your ram size)
+- xGB       with type Linux filesystem (This is our arch place)
 
 ## Format and mount partition
 
@@ -199,12 +209,13 @@ reboot
 When OSX loaded. Using Disk Utility to format `/dev/sda3` (128MB HFS+ we have created before) with Journaled format.
 
 Then create this file structure:
-|___mach_kernel
-|___System
-       |___Library
-              |___CoreServices
-                      |___SystemVersion.plist
-                      |___boot.efi              (Is the file we'v copy, upload in the previous step)
+
+|___mach_kernel   
+|___System   
+       |___Library   
+              |___CoreServices   
+                      |___SystemVersion.plist   
+                      |___boot.efi              (Is the file we'v copy, upload in the previous step)   
 
 Edit SystemVersion.plist content:
 
