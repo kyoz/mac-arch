@@ -134,12 +134,12 @@ Create these new partitions:
 
 Assuming you have this when run `fdisk -l`:
 
-Device             Size            Type
-...                ...             ...
-/dev/sda3          128MB           Apple HFS+
-/dev/sda4          256MB           Linux filesystem
-/dev/sda5          16GB            Linux Swap
-/dev/sda6          64GB            Linux filesystem
+|Device             |Size            |Type|
+|---                |---             |---|
+|/dev/sda3          |128MB           |Apple HFS+|
+|/dev/sda4          |256MB           |Linux filesystem|
+|/dev/sda5          |16GB            |Linux Swap|
+|/dev/sda6          |64GB            |Linux filesystem|
 
 Now let format and mount partition:
 
