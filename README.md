@@ -152,15 +152,12 @@ genfstab -p /mnt >> /mnt/etc/fstab
 vi /mnt/etc/fstab
 ```
 
-And make sure it look like:
+If you are using ssd, remove all discard in all lines, and make sure it look like:
 
-|           |      |      |                                 |   |
-|---        |---   |---   |---                              |---|
-|/dev/sda4  |/boot |ext2  |defaults,relatime,stripe=4       |0 2|
-|/dev/sda6  |/     |ext4  |defaults,noatime,data=writeback  |0 1|
-
-
-If you are using ssd, remove all discard in all lines
+```sh
+/dev/sda4   /boot   ext2   defaults,relatime,stripe=4        0 2
+/dev/sda6   /       ext4   defaults,noatime,data=writeback   0 1
+```
 
 ## System config
 
