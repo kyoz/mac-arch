@@ -110,8 +110,8 @@ Create these new partitions:
 
 |Size    |Type              |Description|
 |---     |---               |---        |
-|128MB   |Apple HFS+        |This is required in order to make artix dual boot with OSX|
-|256MB   |Linux filesystem  |Artix file system|
+|128MB   |Apple HFS+        |This is required in order to make Arch dual boot with OSX|
+|256MB   |Linux filesystem  |Arch file system|
 |xMB     |Linux Swap        |If you have space, try to make it double size of your ram size|
 |xGB     |Linux filesystem  |This is our home|
 
