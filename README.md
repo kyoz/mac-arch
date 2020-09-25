@@ -19,12 +19,12 @@
 # Contents
 
   - [Install arch dual boot](#install-arch-dual-boot)
-    - [Make arch installer USB](#make-arch-installer-usb)
     - [Make space for Arch](#make-space-for-arch)
+    - [Make installer USB](#make-installer-usb)
     - [Boot it up](#boot-it-up)
     - [Connect wifi](#connect-wifi)
-    - [Partitioning](#partitioning)
-    - [Format and mount partition](#format-and-mount-partition)
+    - [Partition](#partitioning)
+    - [Format & Mount](#format-and-mount)
     - [Install base packages & generate fstab](#install-base-packages-&-generate-fstab)
     - [System config](#system-config)
     - [Install the bootloader](#install-the-bootloader)
@@ -54,7 +54,14 @@
 
 # Install arch dual boot
 
-## Make arch installer USB
+## Make space for Arch
+
+Use Disk Utility Partition feature to add new Partition for Arch, follow [this guide](https://wiki.archlinux.org/index.php/Mac#Arch_Linux_with_OS_X_or_other_operating_systems)
+
+Or if you already know how to use Disk Utility, then create a partition with FAT32 format.
+
+
+## Make installer USB
 
 Download arch's iso [here](https://www.archlinux.org/download/)
 
@@ -65,12 +72,6 @@ Find usb by using `diskutil list`, then:
 diskutil unmountDisk /dev/diskX
 dd if=path/to/arch.iso of=/dev/diskX bs==1m
 ```
-
-## Make space for Arch
-
-Use Disk Utility Partition feature to add new Partition for Arch, follow [this guide](https://wiki.archlinux.org/index.php/Mac#Arch_Linux_with_OS_X_or_other_operating_systems)
-
-Or if you already know how to use Disk Utility, then create a partition with FAT32 format.
 
 ## Boot it up
 
@@ -91,7 +92,7 @@ Use `wifi-menu` then choose wifi to connect, then check connection with:
 ping -c 3 google.com
 ```
 
-## Partitioning
+## Partition
 
 View all your patitions to choose correct one
 
@@ -107,12 +108,14 @@ cgdisk /dev/sdaX
 
 Create these new partitions:
 
-- 128MB with type Apple HFS+ (This is required in order to make thing works)
-- 256MB with type Linux filesystem
-- xMB      with type Linux Swap (If you have space, try to keep it double size of your ram size)
-- xGB       with type Linux filesystem (This is our arch place)
+|Size    |Type              |Description|
+|---     |---               |---        |
+|128MB   |Apple HFS+        |This is required in order to make artix dual boot with OSX|
+|256MB   |Linux filesystem  |Artix file system|
+|xMB     |Linux Swap        |If you have space, try to make it double size of your ram size|
+|xGB     |Linux filesystem  |This is our home|
 
-## Format and mount partition
+## Format and mount
 
 Assuming you have this when run `fdisk -l`:
 
