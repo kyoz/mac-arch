@@ -18,6 +18,7 @@
 
 # Contents
 
+  - [Before you start](#before-you-start)
   - [Install arch dual boot](#install-arch-dual-boot)
     - [Make space for Arch](#make-space-for-arch)
     - [Make installer USB](#make-installer-usb)
@@ -51,6 +52,12 @@
     - [Enable Trim for SSD](#enable-trim-for-ssd)
     - [Fixing lid closing to suspend](#fixing-lid-closing-to-suspend)
     - [Power saving for Intel chip](#power-saving-for-intel-chip)
+
+
+# Before you start
+
+It's seem [Macbook with T2 Security](https://support.apple.com/en-us/HT208862) isn't support linux very well, view this [discussions](https://discussions.apple.com/thread/251087440?answerId=252062188022#252062188022)
+
 
 # Install arch dual boot
 
