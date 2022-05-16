@@ -58,6 +58,8 @@
 
 It's seem [Macbook with T2 Security](https://support.apple.com/en-us/HT208862) isn't support linux very well, view this [discussions](https://discussions.apple.com/thread/251087440?answerId=252062188022#252062188022)
 
+⚠️Batterry Issue: I'v used arch and artix for couple year on my MBP, everything is fine, smooth, but there is a problem, because OSX is apple stuff, so they make it very well, when using linux on Macbook, you must accept the risk. The only problem i've ever faced is that my battery degrades very quickly.
+
 
 # Install arch dual boot
 
